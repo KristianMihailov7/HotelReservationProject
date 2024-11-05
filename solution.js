@@ -30,7 +30,7 @@ function searchFormData(e) {
     const checkIn = data.querySelector('#check-in').value;
     const checkOut = data.querySelector('#check-out').value;
     const people = data.querySelector('#people').value;
-    if (checkIn != '' && checkOut != '' && people != '' && Number(people) < 20 &&
+    if (checkIn != '' && checkOut != '' && people != '' && 
         new Date(checkIn) <= new Date(checkOut)) {
         reservation.startDate = checkIn;
         reservation.endDate = checkOut;
